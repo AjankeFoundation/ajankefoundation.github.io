@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="main.css" type="text/css" />
+<link rel="stylesheet" href="blog.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="Subscribe to this page..." href="feed.rss" />
+<title>Ajanke BasHTTPd Webserver 2.0.0. Released</title>
+</head><body>
+<div id="divbodyholder">
+<div class="headerholder"><div class="header">
+<div id="title">
+<h1 class="nomargin"><a class="ablack" href="http://ajanke.org/index.html">The Ajanke Foundation</a></h1>
+<div id="description">All your init scripts are belong to us.</div>
+</div></div></div>
+<div id="divbody"><div class="content">
+<!-- entry begin -->
+<h3><a class="ablack" href="ajanke-bashttpd-webserver-200-released.html">
+Ajanke BasHTTPd Webserver 2.0.0. Released
+</a></h3>
+<!-- bashblog_timestamp: #201611101311.55# -->
+<div class="subtitle">November 10, 2016 &mdash; 
+Ajanke Foundation
+</div>
+<!-- text begin -->
+
+<h2>Greetings!</h2>
+
+<hr />
+
+<p>Hello World! The Ajanke Foundation is proud to announce that after a rewrite of the codebase and implemntation of basic testing with Travis-CI &amp; bashtest, BasHTTPd is now 2.0.0!</p>
+
+<h2>Where Ajanke&rsquo;s BasHTTPd is Headed</h2>
+
+<hr />
+
+<p>You might be wondering how the software was changed from the avleen/bashttpd original version, and why it was forked instead of contributed to.  Well, first and foremost, the platform has been simplified and given some sensible defaults.  Avleen&rsquo;s release included a configuraiton file that would allow you to somewhat emulate the &ldquo;Alias&rdquo; feature of other webservers.  This, and others, were great features, but were removed in favor of simplcity.  Since BasHTTPd is not recommended for large-scale production environments, it&rsquo;s primary use case is sharing files quickly over a private network with minimal tools and setup. This makes it a great choice for small devices like Raspberry Pis, or for easily sharing files from your laptop between your friends on the same private network.  Having a configuration file and URI matching features falls outside of the scope of that use case.  The main goal of this project is to make BasHTTPd easy to install, intuitive to use, and a go-to private network webserver solution for anyone with a bash shell.</p>
+
+<h2>What is new to the 2.0.0. Release?</h2>
+
+<hr />
+
+<p>The 2.0.0. release adds in some notable developer features including: bebug logging, more verbose output in general, and additional comments in the script.  This version replaces some of the configuration options of the server in exchange for sensible defaults that make it more useable for file sharing. This release also improves some preexisting features of the previous release.  For example, BasHTTPd is now able to serve binary data in addition to textual file formats like HTML.  It also has a reducted amount of dependencies, and the ones that it did keep require less flags.  This will help it run more reliably across different versions of Linux and other Unices.</p>
+
+<h2>What is coming next?</h2>
+
+<p>The next major release will likely completely eliminate support for <code>netcat</code> and <code>socat</code> and replace those with <code>tcpserver</code> as the default TCP connection engine.  As mentioned in the documentation, <code>netcat</code> has a serious limitation: it can only handle one connection before closing. <code>socat</code> on the other hand, does not ship with reliable switches/options that are uniform across operating systems.  While these long-standing GNU utilities are usually the best option at maintaining compatibility across Unices, that is just not the case with these particular utilities.  As a result, one of two approaches must be taken. A) I need to write a small CLI to accompany <code>bashttpd.sh</code> that would detect the type of TCP engines installed, and select the best one, with the right flags. B) I have the script install check for <code>tcpserver</code>, and if it isn&rsquo;t present, download and install it the first time <code>bashttpd.sh</code> runs on a box. Option A requires numerous more dependencies and multiplies the complexity of BasHTTPd. As a result, Option B is much more likely to happen.</p>
+
+<h2>What About Minor Improvements?</h2>
+
+<p>Minor releases are going to be focused on improving the current features, and adding in the ability to upload files as well as download.</p>
+
+<h2>Contributing</h2>
+
+<p>Contributions via pull requests are always welcome. If you have an idea for a feature or use case, plese make your voice heard on the Github.</p>
+
+<p>Thanks for your time, and stay janky, Bash hackers!</p>
+
+<!-- text end -->
+<!-- entry end -->
+</div>
+<div id="footer">Ajanke2 License <a href="">Ajanke Foundation</a> &mdash; <a href="mailto:cody&#46;cochran&#64;rackspace&#46;com">cody&#46;cochran&#64;rackspace&#46;com</a><br/>
+Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>
+</div></div>
+</body></html>
