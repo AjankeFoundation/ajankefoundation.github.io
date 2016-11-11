@@ -27,3 +27,4 @@ Minor releases are going to be focused on improving the current features, and ad
 Contributions via pull requests are always welcome. If you have an idea for a feature or use case, please make your voice heard on the Github.
 
 Thanks for your time, and stay janky, Bash hackers!
+

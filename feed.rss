@@ -2,8 +2,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
 <channel><title>The Ajanke Foundation</title><link>http://ajanke.org/index.html</link>
 <description>All your init scripts are belong to us.</description><language>en</language>
-<lastBuildDate>Fri, 11 Nov 2016 20:15:19 +0300</lastBuildDate>
-<pubDate>Fri, 11 Nov 2016 20:15:19 +0300</pubDate>
+<lastBuildDate>Fri, 11 Nov 2016 20:27:22 +0300</lastBuildDate>
+<pubDate>Fri, 11 Nov 2016 20:27:22 +0300</pubDate>
 <atom:link href="http://ajanke.org/feed.rss" rel="self" type="application/rss+xml" />
 <item><title>
 Ajanke BasHTTPd Webserver 2.0.0. Released
@@ -12,8 +12,8 @@ Ajanke BasHTTPd Webserver 2.0.0. Released
 <h2>Greetings!</h2>
 
 <hr />
-]]></description><link>http://ajanke.org/ajanke-bashttpd-webserver-200-released747.html</link>
-<guid>http://ajanke.org/./ajanke-bashttpd-webserver-200-released747.html</guid>
+]]></description><link>http://ajanke.org/ajanke-bashttpd-webserver-200-released.html</link>
+<guid>http://ajanke.org/./ajanke-bashttpd-webserver-200-released.html</guid>
 <dc:creator>Ajanke Foundation</dc:creator>
-<pubDate>Fri, 11 Nov 2016 18:04:46 +0300</pubDate></item>
+<pubDate>Fri, 11 Nov 2016 20:27:17 +0300</pubDate></item>
 </channel></rss>
